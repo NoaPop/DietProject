@@ -1,63 +1,123 @@
+/* הגדרות כלליות */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     direction: rtl;
     background-color: #f4f4f9;
     color: #333;
-    margin: 0;
-    padding: 0;
+    line-height: 1.6;
 }
+
+/* עיצוב Header */
 header {
     background-color: #4CAF50;
     color: white;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
 }
-h1 {
-    font-size: 2.5em;
+
+header h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
 }
-h2 {
-    font-size: 1.8em;
-    color: #333;
+
+header p {
+    font-size: 1.5em;
 }
+
+/* עיצוב תוכן */
 .container {
     padding: 20px;
     max-width: 900px;
     margin: 0 auto;
 }
+
 .menu-section {
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.menu-section h2 {
+    font-size: 2em;
+    color: #4CAF50;
     margin-bottom: 20px;
 }
-.menu-section h3 {
+
+h3 {
     color: #4CAF50;
+    font-size: 1.6em;
+    margin-bottom: 10px;
 }
-.meal {
-    margin-bottom: 15px;
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
 }
+
 .meal-title {
     font-weight: bold;
-    color: #4CAF50;
+    margin-bottom: 5px;
 }
+
 table {
     width: 100%;
-    margin-top: 20px;
     border-collapse: collapse;
+    margin-top: 20px;
 }
+
 th, td {
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #ddd;
     text-align: center;
 }
+
 th {
     background-color: #4CAF50;
     color: white;
 }
-.note {
-    background-color: #f8f8f8;
-    padding: 15px;
-    border-radius: 5px;
-    margin-top: 30px;
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* עיצוב footer */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* עיצוב למובייל */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1.2em;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    h2, h3 {
+        font-size: 1.4em;
+    }
+
+    table {
+        font-size: 0.9em;
+    }
 }
